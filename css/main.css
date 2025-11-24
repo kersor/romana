@@ -1,0 +1,426 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./header.css');
+@import url('./footer.css');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1710px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+
+
+
+
+.page {
+
+}
+
+.page_top {
+
+}
+
+.page_about {
+    margin-top: 239px;
+}
+
+.content_top {
+    background: linear-gradient(173.26deg, rgba(255, 255, 255, 0.7) 42.58%, rgba(153, 153, 153, 0.112) 100.84%);
+}
+
+.content_top {
+    display: flex;
+    position: relative;
+    margin-top: 110px;
+}
+
+.content_top .container {
+    position: relative;
+}
+
+.content_top__img {
+    top: 0;
+    position: absolute;
+    right: -97px;
+}
+
+.content_top__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 46px;
+
+    height: 715px;
+    max-width: 732px;
+}
+
+.content_top__title {
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 150px;
+    color: #222222;
+}
+
+.content_top__subtitle {
+    font-size: 53px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.content_top__description {
+    font-size: 24px;
+    line-height: 140%;
+    color: #5E5E5E;
+}
+
+.content_top__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.content_bottom {
+    margin-left: 180px;
+    margin-top: 135px;
+
+}
+
+.content_bottom__text {
+    width: 100%;
+    max-width: 478px;
+    font-weight: 700;
+    position: relative;
+}
+
+.content_bottom__text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -16px;
+    width: 4px;
+    height: 100%;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+.content_about__container {
+    display: flex;
+    position: relative;
+}
+
+.content_about__descriptions {
+    margin-top: 107px;
+    margin-left: 150px;
+    max-width: 507px;
+    width: 100%;
+}
+
+.content_about__back {
+    position: absolute;
+    z-index: -1;
+    left: 500px;
+    top: -193px;
+}
+
+.content_about__img {
+   margin-left: -113px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.page_video {
+    margin-top: 407px;
+}
+
+.content_video {
+    height: 848px;
+    width: 100%;
+}
+
+.content_video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.page_info {
+    margin-top: 64px;
+    color: #3A3A3A;
+}
+
+.content_info__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+
+.content_info__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+
+    padding: 57px 0;
+    background: #F7F7F7;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content_info__descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 286px;
+    width: 100% ;
+    text-align: center;
+}
+
+.content_info__description_square {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
+
+
+
+.page_cash {
+    margin-top: 117px;
+}
+
+.content_cash {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 36px;
+
+    max-width: 603px;
+    margin: 0 auto;
+}
+
+.content_cash__title {
+    display: flex;
+    gap: 27px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.content_cash__line {
+    width: 57px;
+    height: 4px;
+    background-color: #000;
+
+}
+
+.content_cash__subtitle {
+    font-weight: 700;
+}
+
+
+
+
+
+.page_form {
+    margin-top: 130px;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0.84) 23%, rgba(153, 153, 153, 0.16) 86%);
+}
+
+.content_form {
+    display: flex;
+}
+
+.content_form__img {
+    margin-left: -113px;
+}
+
+.content_form__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 604px;
+    margin: 0 auto;
+}
+
+.content_form__title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.content_form__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+}
+
+.content_form__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.content_form__inputs input {
+    font-size: 16px;
+    padding: 16px;
+    background: #FFF;
+    border-radius: 4px;
+}
+
+.content_form__form {
+    margin-top: 16px;
+}
+
+.content_form__description {
+    font-size: 16px;
+    text-align: center;
+}
+
+.content_form__personal {
+    display: flex;
+    gap: 16px;
+    color: #222222;
+}
+
+.content_form__personal_body a {
+    color: #222222;
+    text-decoration: underline !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content_form__personal_body input[type="checkbox"] {
+    display: none;
+}
+
+.content_form__personal_input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+.content_form__personal_input * {
+        color: #222222;
+}
+
+.custom_checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    height: 24px;
+    border: 1px solid #D5D5D5;
+    border-radius: 2px;
+    background: #fff;
+    position: relative;
+    transition: 0.2s;
+}
+
+.custom_checkbox img {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .custom_checkbox img {
+    display: block;
+}
+
+
+
+
+
+
+.button {
+    background: #428FD7;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 600;
+
+    max-width: 390px;
+    width: 100%;
+    padding: 13px 0;
+
+    cursor: pointer;
+
+    transition: background 0.15s ease;
+}
+
+.button:hover {
+    background: #1761AD;
+}
+
+@media (max-width: 1700px) {
+    .content_top__img {
+        /* width: 90%;
+        object-fit: cover; */
+    }
+}
