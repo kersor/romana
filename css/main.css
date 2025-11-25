@@ -16,6 +16,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 18px;
+    position: relative;
 }
 
 html, body {
@@ -75,13 +76,11 @@ html, body {
 .content_about__mobile_img{
     width: 100%;       
     max-width: 1080px; 
-    margin: 0 auto;    
     transform: translateX(112px);
 }
 
 .content_top__container {
     display: flex;
-    align-items: center;
 }
 
 .content_top__img img,
@@ -89,8 +88,8 @@ html, body {
 .content_about__img img,
 .content_about__mobile_img img{
     width: 100%; 
-    height: auto;  
-    display: block; 
+    min-width: 1080px;
+    height: auto;   
 }
 
 .content_top__info {
@@ -103,6 +102,34 @@ html, body {
     max-width: 732px;
     width: 100%;
 }
+
+@media (max-width: 1800px) {
+    .content_top__img img,
+    .content_top__img__mobile img,
+    .content_about__img img,
+    .content_about__mobile_img img{
+        min-width: 900px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .content_top__img img,
+    .content_top__img__mobile img,
+    .content_about__img img,
+    .content_about__mobile_img img{
+        min-width: 700px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .content_top__img img,
+    .content_top__img__mobile img,
+    .content_about__img img,
+    .content_about__mobile_img img{
+        min-width: 500px;
+    }
+}
+
 
 .content_top__title {
     font-size: 150px;
@@ -132,8 +159,7 @@ html, body {
 
 .content_bottom {
     margin-left: 180px;
-    margin-top: 135px;
-
+    margin-top: 90px;
 }
 
 .content_bottom__text {
