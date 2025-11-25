@@ -48,3 +48,30 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+
+
+
+@media (max-width: 900px) {
+    .header_info {
+        display: none;
+    }
+}
+
+@media (min-width: 901px) {
+    .header_phone__mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .header_logo {
+        max-width: 150px;
+    }
+
+    .header {
+        align-items: flex-end;
+        height: 81px;
+        padding-bottom: 15px;
+    }
+}
