@@ -495,9 +495,7 @@ input[type="checkbox"]:checked + .custom_checkbox img {
         font-size: 16px;
     }
 
-    .content_top__bottom {
-        align-items: center;
-    }
+
 
     .content_top__description br {
         display: none;
@@ -583,6 +581,10 @@ input[type="checkbox"]:checked + .custom_checkbox img {
 @media (max-width: 1100px) {
     .content_top__container {
         flex-direction: column-reverse;
+    }
+
+    .content_top__bottom {
+        align-items: center;
     }
 
     .content_top__img {
